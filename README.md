@@ -35,6 +35,11 @@ Este proyecto es una aplicación web de clima que permite consultar el estado de
 2. Abre el archivo `card_weather_app.html` en tu navegador web.
 3. Ingresa el nombre de una ciudad en el buscador y presiona el botón para consultar el clima.
 
+## Cómo verla en vivo
+
+1. Clic en este enlace [https://whimsical-licorice-0d1445.netlify.app/](https://whimsical-licorice-0d1445.netlify.app/)
+
+
 ## Créditos
 
 Desarrollado por José Miguel Tojil Gento.
