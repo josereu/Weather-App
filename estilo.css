@@ -1,0 +1,250 @@
+
+a#header {
+    background: none;
+    padding: 12px 0 8px 0;
+    position: relative;
+    z-index: 10;
+}
+#header h1, #header p {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+    text-shadow: 0 2px 8px #000a;
+}
+    
+a {
+    color: var(--brand);
+    text-decoration: none
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    background: radial-gradient(1200px 800px at 90% -10%, #0ea5e915 0, transparent 60%),
+        radial-gradient(800px 700px at -10% 110%, #22d3ee20 0, transparent 60%),
+        var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.card {
+    background: linear-gradient(180deg, #0b1220cc, #0b1220bf), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 10"><circle cx="1" cy="1" r="1" fill="%2322d3ee" opacity="0.08"/></svg>');
+    backdrop-filter: saturate(120%) blur(6px);
+    border: 1px solid #22d3ee33;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px #0007;
+}
+
+.estatus {
+    min-height: 24px;
+    margin-top: 8px
+}
+
+.estatus.error {
+    color: var(--err)
+}
+
+.estatus.loading {
+    color: var(--warn)
+}
+
+.fila {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+footer {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8
+}
+
+html,
+body {
+    height: 100%
+}
+
+#buscador {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+#buscador button {
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: none;
+    background: var(--brand);
+    color: #0b1220;
+    font-weight: 700;
+    cursor: pointer
+}
+
+#buscador input {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    background: #0b1220;
+    color: var(--text);
+}
+
+#buscador input::placeholder {
+    color: #64748b;
+    font-size: 20px;
+}
+
+#ciudad {
+    font-size: clamp(20px, 2.2vw, 24px);
+    font-weight: 700
+}
+
+#clima {
+    color: var(--brand);
+    font-weight: 600;
+    text-transform: capitalize
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 720px;
+}
+
+#corazon{
+    color: red;
+}
+
+#detalle-clima {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+}
+
+#detalle-clima .item {
+    background: #0a0f1c;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 10px
+}
+
+#grid-clima {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px
+}
+
+#icon {
+    width: 80px;
+    height: 80px
+}
+
+#temperatura {
+    font-size: clamp(42px, 6vw, 64px);
+    font-weight: 700;
+    line-height: 1
+}
+
+#actualizado {
+    color: var(--muted)
+}
+
+.panel {
+    background: #0b1220;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 16px
+}
+
+:root {
+    --bg: #0f172a;
+    /* slate-900 */
+    --card: #111827ee;
+    /* gray-900 */
+    --muted: #94a3b8;
+    /* slate-400 */
+    --text: #e5e7eb;
+    /* gray-200 */
+    --brand: #22d3ee;
+    /* cyan-400 */
+    --ok: #4ade80;
+    /* green-400 */
+    --warn: #fbbf24;
+    /* amber-400 */
+    --err: #f87171;
+    /* red-400 */
+}
+
+* {
+    box-sizing: border-box
+}
+
+@media (min-width:720px) {
+    #grid-clima {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #contenedor {
+        margin-top: 220px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    body {
+        padding: 8px;
+    }
+    .card {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px #0005;
+    }
+    #contenedor {
+        max-width: 100vw;
+        min-width: 0;
+        width: 100vw;
+    }
+    #header h1 {
+        font-size: 1.3rem;
+    }
+    #buscador {
+        flex-direction: column;
+        gap: 8px;
+    }
+    #buscador input, #buscador button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 10px;
+    }
+    #grid-clima {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #detalle-clima {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    #icon {
+        width: 60px;
+        height: 60px;
+    }
+    #temperatura {
+        font-size: 2rem;
+    }
+    .panel {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    footer {
+        font-size: 10px;
+        padding-bottom: 8px;
+    }
+}

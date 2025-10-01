@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor" class="card">
+        <div id="header">
+            <h1> 🌤️Weather App</h1>
+            <p>Ingresa una ciudad y obtén el clima actual</p>
+        </div><!--header-->
+                
+        <div id="buscador">
+            <input id="ciudad" autofocus placeholder="Ingresa el nombre de una ciudad">
+            <button id="buscar">Buscar</button>
+            <button id="unitBtn">°C</button>
+            <button id="nuevaBusqueda">Nueva búsqueda</button>
+        </div><!--buscador-->
+
+        <div class="estatus" id="estatus"></div>
+
+        <section id="grid-clima">
+        
+            <div id="datos-clima" class="panel">
+                
+                <div class="fila">
+                    <div>
+                        <h1 id="nombreCiudad">Ciudad</h1>
+                        <p id="clima">Nubes dispersas</p>
+                        <p id="actualizado">Actualizado hoy</p>
+                    </div>
+                    <img id="icon" class="icon" alt="Icono del clima" src="" />
+                </div><!--fila-->
+                <div class="fila">
+                    <p id="temperatura">22°C</p>
+                </div><!--fila-->
+
+            </div><!--datos-clima-->
+
+            <div class="panel">
+                
+                <div id="detalle-clima" >
+                    <div class="item">Humedad<br><strong id="humedad">—</strong></div>
+                    <div class="item">Viento<br><strong id="viento">—</strong></div>
+                    <div class="item">Sensación<br><strong id="sensacion">—</strong></div>
+                    <div class="item">Presión<br><strong id="presion">—</strong></div>
+                </div><!--detalle-clima-->
+
+            </div><!--panel-->
+
+        </section><!--grid-clima-->
+        <footer>
+            Origen --> <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap</a> Hecho con <span id="corazon">♥</span> y --> html, css, js
+        </footer>
+    </div><!--contenedor-->
+    <script src="app.js"></script>
+</body>
+</html>
