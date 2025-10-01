@@ -19,7 +19,7 @@ Este proyecto es una aplicación web de clima que permite consultar el estado de
 ## Estructura del Proyecto
 
 - `app.js`: Lógica principal de la aplicación, manejo de eventos, consumo de API y actualización del DOM.
-- `card_weather_app.html`: Archivo HTML principal que contiene la estructura de la interfaz de usuario.
+- `index.html`: Archivo HTML principal que contiene la estructura de la interfaz de usuario.
 - `estilo.css`: Hojas de estilo para el diseño visual y responsivo de la aplicación.
 
 ## Tecnologías Utilizadas
