@@ -32,7 +32,7 @@ Este proyecto es una aplicación web de clima que permite consultar el estado de
 ## Cómo usar
 
 1. Clona o descarga este repositorio.
-2. Abre el archivo `card_weather_app.html` en tu navegador web.
+2. Abre el archivo `index.html` en tu navegador web.
 3. Ingresa el nombre de una ciudad en el buscador y presiona el botón para consultar el clima.
 
 ## Cómo verla en vivo
