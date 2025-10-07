@@ -195,9 +195,10 @@ body {
 
 @media (max-width: 600px) {
     #contenedor {
-        margin-top: 220px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 170px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        
     }
     body {
         padding: 8px;
